@@ -1,6 +1,6 @@
 import java.util.Scanner;
 import java.lang.Double;
-public class Projectinhoindividual {
+public class LittleBee {
 	Scanner teclaopciones = new Scanner(System.in);
 	Scanner teclanombres = new Scanner(System.in);
 	Scanner teclacoords = new Scanner (System.in);
@@ -41,45 +41,45 @@ public void menuPrincipal(){
 	
 		 
 	do {
-		System.out.println (celeste+"Bienvenido al menú Principal de este programa"+normal);
-		System.out.println("Seleccione a que menú quiere ir");
-		System.out.println ("1 - Ir al menú de Apicultores");
-		System.out.println ("2 - Ir al menú de Ciudades");
-		System.out.println ("3 - Ir al menú de Colmenares");
-		System.out.println ("4 - Ir al menú de Centros de extracción");
-		System.out.println ("5 - Ir al menú de Tramos");
-		System.out.println ("6 - Ir al menú de Estadísticas");
+		System.out.println (celeste+"Bienvenido al menÃº Principal de este programa"+normal);
+		System.out.println("Seleccione a que menÃº quiere ir");
+		System.out.println ("1 - Ir al menÃº de Apicultores");
+		System.out.println ("2 - Ir al menÃº de Ciudades");
+		System.out.println ("3 - Ir al menÃº de Colmenares");
+		System.out.println ("4 - Ir al menÃº de Centros de extracciÃ³n");
+		System.out.println ("5 - Ir al menÃº de Tramos");
+		System.out.println ("6 - Ir al menÃº de EstadÃ­sticas");
 		System.out.println ("7 - Salir del programa");
 			where = teclaopciones.nextInt();
 			
 				switch (where) {
 					case 1:
-							System.out.println (verde+"Dirigiendolo al menú de Apicultores"+normal);
+							System.out.println (verde+"Dirigiendolo al menÃº de Apicultores"+normal);
 							System.out.println(verde+"..."+normal);
 						menuApicultor();
 						break;
 					case 2:
-							System.out.println (verde+"Dirigiendolo al menú de Ciudades" +normal);
+							System.out.println (verde+"Dirigiendolo al menÃº de Ciudades" +normal);
 							System.out.println(verde+"..."+normal);
 						menuCiudad();
 						break;
 					case 3:
-							System.out.println (verde+"Dirigiendolo al menú de Colmenares"+normal);
+							System.out.println (verde+"Dirigiendolo al menÃº de Colmenares"+normal);
 							System.out.println(verde+"..."+normal);
 							menuColmenar();
 						break;
 					case 4:
-							System.out.println (verde+"Dirigiendolo al menú de Centros de extracción"+normal);
+							System.out.println (verde+"Dirigiendolo al menÃº de Centros de extracciÃ³n"+normal);
 							System.out.println(verde+"..."+normal);
 							menuCentroDeExtraccion();
 						break;
 					case 5:
-							System.out.println (verde+"Dirigiendolo al menú de Tramos"+normal);
+							System.out.println (verde+"Dirigiendolo al menÃº de Tramos"+normal);
 							System.out.println(verde+"..."+normal);
 							menuTramo();
 						break;
 					case 6:
-							System.out.println (verde+"Dirigiendolo al menú de Estadisticas"+normal);
+							System.out.println (verde+"Dirigiendolo al menÃº de Estadisticas"+normal);
 							System.out.println(verde+"..."+normal);
 							menuEstadisticas();
 							break;
@@ -88,7 +88,7 @@ public void menuPrincipal(){
 					System.out.println (verde +"..."+normal);
 					                          System.exit(0);
 					default:
-						System.out.println( rojo + "Esa opción no está codificada"+ normal);
+						System.out.println( rojo + "Esa opciÃ³n no estÃ¡ codificada"+ normal);
 						System.out.println (verde +"..." + normal);
 						
 						break;
@@ -98,26 +98,26 @@ public void menuPrincipal(){
 	public void menuApicultor(){
 		
 		do {
-				System.out.println (celeste+"Bienvenido al menú de Apicultores"+normal);
-				System.out.println("¿Qué quiere hacer?");
+				System.out.println (celeste+"Bienvenido al menÃº de Apicultores"+normal);
+				System.out.println("Â¿QuÃ© quiere hacer?");
 				System.out.println("1- Registrar Apicultor");
 				System.out.println("2- Mostrar Apicultores");
 				System.out.println ("3- Buscar Apicultor");
 				System.out.println ("4- Modificar Apicultor");
 				System.out.println("5- Borrar Apicultor");
-				System.out.println ("6- Regresar al menú Principal");
+				System.out.println ("6- Regresar al menÃº Principal");
 					where = teclaopciones.nextInt();
 				
 					switch (where) {
 						case 1:
-							System.out.println(verde+"Ahora lo estamos enviando al menú para Registrar Apicultores"+normal);
+							System.out.println(verde+"Ahora lo estamos enviando al menÃº para Registrar Apicultores"+normal);
 							System.out.println(celeste+"Para registrar un Apicultor ingrese los siguientes datos que se le pediran del apicultor");
 							System.out.println(verde+"..."+normal);
 								registrarApicultor();
 				
 						break;
 						case 2:
-							System.out.println(verde+"Ahora lo estamos enviando al menú para mostrar el listado de Apicultores"+normal);
+							System.out.println(verde+"Ahora lo estamos enviando al menÃº para mostrar el listado de Apicultores"+normal);
 				
 							System.out.println(verde+"..."+normal);
 								listadoDeApicultores();
@@ -126,7 +126,7 @@ public void menuPrincipal(){
 						break;
 						
 						case 3:
-							System.out.println (verde+"Ahora lo estamos enviando al menú para buscar Apicultores"+normal);
+							System.out.println (verde+"Ahora lo estamos enviando al menÃº para buscar Apicultores"+normal);
 								buscarLeApicolteur();
 			
 							System.out.println(verde+"..."+normal);
@@ -145,13 +145,13 @@ public void menuPrincipal(){
 						break;
 						
 						case 6:
-							System.out.println (purpura+"Regresando al Menú Principal");
+							System.out.println (purpura+"Regresando al MenÃº Principal");
 							System.out.println (verde+"..."+normal);
 							menuPrincipal();
 						break;
 				
 						default:
-							System.out.println(rojo+"Esa opción no está codificada");
+							System.out.println(rojo+"Esa opciÃ³n no estÃ¡ codificada");
 							System.out.println(verde+"..."+normal);
 						break;
 				}
@@ -170,7 +170,7 @@ public void menuPrincipal(){
 							String ciudad; 
 							String departamento; 
 							String email; 
-							String teléfono;
+							String telÃ©fono;
 							int anioDeRegistro;
 						
 							System.out.println (verde+"----------------------------------------"+normal);
@@ -178,12 +178,12 @@ public void menuPrincipal(){
 							System.out.println (verde+"----------------------------------------"+normal);
 							
 								do {
-									System.out.println(celeste+"Ingrese la Cédula de Identidad del apicultor"+normal);
+									System.out.println(celeste+"Ingrese la CÃ©dula de Identidad del apicultor"+normal);
 									System.out.println(amarillo+"No utilize puntos ni guiones ni espacios"+normal);
 									cedula = teclanombres.nextLine();
 									
 										if (cedula.length() !=8 || cedula.contains("-") || cedula.contains ((" ")) || cedula.contains(".")) {
-											System.out.println(rojo+"Introdujo la cédula incorrectamente");
+											System.out.println(rojo+"Introdujo la cÃ©dula incorrectamente");
 						
 										}
 									} while (cedula.length() != 8);
@@ -203,7 +203,7 @@ public void menuPrincipal(){
 									System.out.println(celeste+"Ingrese la calle en la que vive el apicultor" +normal);
 									calle = teclanombres.nextLine();
 									if (calle.length() < 2) {
-										System.out.println(rojo+"El nombre la calle ingresado es inválido"+normal);
+										System.out.println(rojo+"El nombre la calle ingresado es invÃ¡lido"+normal);
 									}
 								}while (calle.length() <2);
 								
@@ -211,25 +211,25 @@ public void menuPrincipal(){
 									System.out.println(celeste+"Ingrese el nombre del barrio en el que vive el apicultor"+normal);
 									barrio= teclanombres.nextLine();
 									 if (barrio.length() < 2) {
-										 System.out.println (rojo+"El nombre del barrio ingresado es inválido"+normal);
+										 System.out.println (rojo+"El nombre del barrio ingresado es invÃ¡lido"+normal);
 									 }
 									}while (barrio.length() < 2);
 								
 								do {
-									System.out.println(celeste +"Ingrese el número de puerta de la casa del apicultor"+normal);
+									System.out.println(celeste +"Ingrese el nÃºmero de puerta de la casa del apicultor"+normal);
 					
 									numero = teclanombres.nextLine();
 										if (numero.length() !=4) {
-											System.out.println(rojo+"Introdujo el número incorrectamente");
+											System.out.println(rojo+"Introdujo el nÃºmero incorrectamente");
 										}
 										
 									} while (numero.length() != 4 );
 								
 								do { 
-									System.out.println(celeste+"Ingrese el nombre del país en el que vive el apicultor"+normal);
+									System.out.println(celeste+"Ingrese el nombre del paÃ­s en el que vive el apicultor"+normal);
 										pais = teclanombres.nextLine();
 										if (pais.length() < 2 ) {
-											System.out.println (rojo+"El nombre del país es inválido"+normal);
+											System.out.println (rojo+"El nombre del paÃ­s es invÃ¡lido"+normal);
 										}
 									}while (pais.length() < 2);
 								
@@ -238,7 +238,7 @@ public void menuPrincipal(){
 									ciudad=teclanombres.nextLine();																												
 									
 									if (ciudad.length() < 2) {
-										System.out.println(rojo+"El nombre de la ciudad es inválida"+normal);
+										System.out.println(rojo+"El nombre de la ciudad es invÃ¡lida"+normal);
 									}
 									}while (ciudad.length() < 2);
 								
@@ -247,7 +247,7 @@ public void menuPrincipal(){
 									departamento=teclanombres.nextLine();																												
 									
 									if (departamento.length() < 2) {
-										System.out.println(rojo+"El nombre del departamento es inválido"+normal);
+										System.out.println(rojo+"El nombre del departamento es invÃ¡lido"+normal);
 									}
 									}while (departamento.length() < 2);
 								
@@ -258,24 +258,24 @@ public void menuPrincipal(){
 									email=teclanombres.nextLine();																												
 								
 										if (email.length() >= 256 || email.length() < 14 ) {
-											System.out.println(rojo+"El Correo Electronico ingresado del apicultor es inválido"+normal);
+											System.out.println(rojo+"El Correo Electronico ingresado del apicultor es invÃ¡lido"+normal);
 										}
 								}while (email.length() >= 256 ||email.length() < 14);
 							
 								do {
-									System.out.println(celeste+"Ingrese teléfono del apicultor sin código de país"+normal);
-									teléfono = teclanombres.nextLine();
+									System.out.println(celeste+"Ingrese telÃ©fono del apicultor sin cÃ³digo de paÃ­s"+normal);
+									telÃ©fono = teclanombres.nextLine();
 								
-										if (teléfono.length() != 9 ) {
-											System.out.println(rojo+ "El teléfono ingresado es inválido"+normal);
+										if (telÃ©fono.length() != 9 ) {
+											System.out.println(rojo+ "El telÃ©fono ingresado es invÃ¡lido"+normal);
 										}
-								}while (teléfono.length() != 9);
+								}while (telÃ©fono.length() != 9);
 								
 								do {
-									System.out.println (celeste+"Ingrese el año en el que se registró al apicultor en la Sociedad Apícola"+normal);
+									System.out.println (celeste+"Ingrese el aÃ±o en el que se registrÃ³ al apicultor en la Sociedad ApÃ­cola"+normal);
 									anioDeRegistro= teclaopciones.nextInt();
 									if (anioDeRegistro <0 || anioDeRegistro > 2023 || anioDeRegistro < 1934) {
-									System.out.println(rojo+"El año ingresado es inválido"+normal);
+									System.out.println(rojo+"El aÃ±o ingresado es invÃ¡lido"+normal);
 									}
 									
 								}while (anioDeRegistro <0 || anioDeRegistro > 2023 || anioDeRegistro < 1934);
@@ -290,14 +290,14 @@ public void menuPrincipal(){
 								if (apicultores [lugar] == null) {
 								
 									apicultores [lugar] = ("Apicultor "+lugar+":" 
-								+ "Cédula: " + cedula+" Nombre: "+ nombre + " Dirección: "+ direccion
-								+ " Ciudad: "+ ciudad + " Departamento: " +departamento+ " Correo electrónico: "+ email + " Teléfono: "+ teléfono + " Año de registro: "+ anioDeRegistro);
+								+ "CÃ©dula: " + cedula+" Nombre: "+ nombre + " DirecciÃ³n: "+ direccion
+								+ " Ciudad: "+ ciudad + " Departamento: " +departamento+ " Correo electrÃ³nico: "+ email + " TelÃ©fono: "+ telÃ©fono + " AÃ±o de registro: "+ anioDeRegistro);
 									System.out.println (celeste+"Se ha registrado exitosamente a el apicultor"+normal);
 										
 									lugar=9;
 								}
 								}
-								System.out.println(verde+"Ahora lo estamos regresando al menú de Apicultores"+normal);
+								System.out.println(verde+"Ahora lo estamos regresando al menÃº de Apicultores"+normal);
 								
 								System.out.println(verde+"..."+normal);
 								menuApicultor();
@@ -311,12 +311,12 @@ public void menuPrincipal(){
 								System.out.println (verde+"----------------------------------------"+normal);
 							
 								
-								System.out.println(celeste+"Ingrese la cédula de un apicultor para buscarlo"+normal);
+								System.out.println(celeste+"Ingrese la cÃ©dula de un apicultor para buscarlo"+normal);
 								buscadito = teclanombres.next();
 								for (int lugar=0;lugar<apicultores.length;lugar++) {
 									
 								if (buscadito.length()!= 8) {
-									System.out.println(rojo+"Cédula ingresada incorrectamente"+normal);
+									System.out.println(rojo+"CÃ©dula ingresada incorrectamente"+normal);
 								} else {
 									
 										if(cedulaA[lugar].contains(buscadito)) { 
@@ -334,12 +334,12 @@ public void menuPrincipal(){
 								}
 								
 								
-								System.out.println (celeste+ "Si quiere volver al menú de Apicultores: precione 1"+normal);
-								System.out.println (celeste+"Para buscar otro  apicultor precione cualquier otro número"+normal);
+								System.out.println (celeste+ "Si quiere volver al menÃº de Apicultores: precione 1"+normal);
+								System.out.println (celeste+"Para buscar otro  apicultor precione cualquier otro nÃºmero"+normal);
 								where= teclaopciones.nextInt();
 								
 								if (where == 1) {
-								System.out.println(verde+"Ahora lo estamos regresando al menú de Apicultores"+normal);
+								System.out.println(verde+"Ahora lo estamos regresando al menÃº de Apicultores"+normal);
 								
 								System.out.println(verde+"..."+normal);
 								menuApicultor();
@@ -368,7 +368,7 @@ public void menuPrincipal(){
 									System.out.println (verde+"----------------------------------------"+normal);
 							}
 									
-								System.out.println (celeste+ "Si quiere volver al menú de Apicultores: precione 1"+normal);
+								System.out.println (celeste+ "Si quiere volver al menÃº de Apicultores: precione 1"+normal);
 								where= teclaopciones.nextInt();
 							}while (where != 1);
 								menuApicultor();
@@ -379,19 +379,19 @@ public void menuPrincipal(){
 		
 
 		do {
-			System.out.println (celeste+"Bienvenido al menú de Ciudades"+normal);
-			System.out.println("¿Qué quiere hacer?");
+			System.out.println (celeste+"Bienvenido al menÃº de Ciudades"+normal);
+			System.out.println("Â¿QuÃ© quiere hacer?");
 			System.out.println("1- Registrar Ciudad");
 			System.out.println("2- Buscar Ciudad");
 			System.out.println("3- Mostrar Ciudades");
 			System.out.println("4- Modificar Ciudad");
 			System.out.println("5- Borrar Ciudad");
-			System.out.println("6- Regresar al menú Principal");
+			System.out.println("6- Regresar al menÃº Principal");
 				where = teclaopciones.nextInt();
 
 					switch (where) {
 						case 1:
-							System.out.println(verde+"Ahora lo estamos enviando al menú para Registrar Ciudades"+normal);
+							System.out.println(verde+"Ahora lo estamos enviando al menÃº para Registrar Ciudades"+normal);
 							System.out.println(celeste+"Para registrar un Ciudad ingrese los siguientes datos que se le pediran del apicultor");
 							
 							System.out.println(verde+"..."+normal);
@@ -403,7 +403,7 @@ public void menuPrincipal(){
 							System.out.println(verde+"..."+normal);
 						break;
 						case 3:
-							System.out.println(verde+"Ahora lo estamos enviando al menú con el listado de Ciudades");
+							System.out.println(verde+"Ahora lo estamos enviando al menÃº con el listado de Ciudades");
 							
 	
 							System.out.println(verde+"..."+normal);
@@ -426,13 +426,13 @@ public void menuPrincipal(){
 						break;
 						
 						case 6:
-							System.out.println (purpura+"Regresando al Menú Principal"+normal);
+							System.out.println (purpura+"Regresando al MenÃº Principal"+normal);
 							System.out.println (verde+"..."+normal);
 								menuPrincipal();
 						break;
 						default:
 							
-							System.out.println(marron+"Esa opción no está codificada"+normal);
+							System.out.println(marron+"Esa opciÃ³n no estÃ¡ codificada"+normal);
 							System.out.println(verde+"..."+normal);
 						break;
 						
@@ -442,10 +442,10 @@ public void menuPrincipal(){
 	}
 					public void precargarCiudad(){
 						
-						//Piriápolis
+						//PiriÃ¡polis
 						coXeY[0]=(-55.2747100);
 						coXeY[1]=(-34.8628700);
-						ciudad[0] = ("Nombre de la ciudad: "  + "Piriápolis" + " Coordenadas: "+ "X: " + coXeY[0] + " Y: " + coXeY[1]);
+						ciudad[0] = ("Nombre de la ciudad: "  + "PiriÃ¡polis" + " Coordenadas: "+ "X: " + coXeY[0] + " Y: " + coXeY[1]);
 						
 						
 						//Melo
@@ -467,7 +467,7 @@ public void menuPrincipal(){
 						coXeY [8]=(-58.0755600);
 						coXeY [9]=(-32.3213900);
 						
-						ciudad[4] = ("Nombre de la ciudad: " +  "Paysandú" +  " Coordenadas: "+ "X: " +coXeY[8] + " Y: "+coXeY[9] );
+						ciudad[4] = ("Nombre de la ciudad: " +  "PaysandÃº" +  " Coordenadas: "+ "X: " +coXeY[8] + " Y: "+coXeY[9] );
 						
 						System.out.println(verde+"Se han cargado las ciudades del sistema correctamente"+normal);
 							
@@ -495,7 +495,7 @@ public void menuPrincipal(){
 							 					nombre = teclanombres.nextLine();
 							 					if (nombre.length()<2) {
 							 						
-							 						System.out.println(rojo+"ERROR: El nombre ingresado no es válido."+normal);
+							 						System.out.println(rojo+"ERROR: El nombre ingresado no es vÃ¡lido."+normal);
 							 						}
 							 					
 											    }while (nombre.length()<2);
@@ -504,7 +504,7 @@ public void menuPrincipal(){
 												System.out.println(celeste+"Ingrese la coordenada X de la ciudad ha registrar"+normal);
 												coordX = teclacoords.nextDouble();
 												if (coordX < -180 || coordX > 180) {
-												 System.out.println(rojo+"ERROR: La coordenada ingresada no es válida."+normal);
+												 System.out.println(rojo+"ERROR: La coordenada ingresada no es vÃ¡lida."+normal);
 												}
 											 }while (coordX < -180 || coordX > 180);
 											 	
@@ -512,7 +512,7 @@ public void menuPrincipal(){
 											 	System.out.println(celeste+"Ingrese la coordenada Y de la ciudad ha registrar"+normal);
 											 		coordY = teclacoords.nextDouble();
 											 			if (coordY < -90 || coordY > 90) {
-											 				System.out.println(rojo+"ERROR: La coordenada ingresada no es válida."+normal);
+											 				System.out.println(rojo+"ERROR: La coordenada ingresada no es vÃ¡lida."+normal);
 											 			}
 											 			}while (coordY < -90 || coordY > 90);
 											
@@ -544,11 +544,11 @@ public void menuPrincipal(){
 											 			
 						}
 						System.out.println("1- Salir de Registrar Ciudad");
-						System.out.println("Cualquier otro número- Volver a registrar");
+						System.out.println("Cualquier otro nÃºmero- Volver a registrar");
 						where = teclaopciones.nextInt();
 						
 					}while (where !=1);
-					System.out.println(verde+"Regresandolo al menú ciudad");
+					System.out.println(verde+"Regresandolo al menÃº ciudad");
 					System.out.println(verde+"..."+normal);
 						menuCiudad();
 						}
@@ -572,7 +572,7 @@ public void menuPrincipal(){
 								System.out.println (verde+"----------------------------------------"+normal);
 						}
 								
-							System.out.println ("Si quiere volver al menú de ciudades: precione 1");
+							System.out.println ("Si quiere volver al menÃº de ciudades: precione 1");
 							where= teclaopciones.nextInt();
 						}while (where != 1);
 							menuCiudad();
@@ -583,15 +583,15 @@ public void menuPrincipal(){
 		
 		do {
 	
-			System.out.println (celeste+"Bienvenido al menú de Colmenares"+normal);
-			System.out.println("¿Qué quiere hacer?");
+			System.out.println (celeste+"Bienvenido al menÃº de Colmenares"+normal);
+			System.out.println("Â¿QuÃ© quiere hacer?");
 			System.out.println("1- Registrar Colmenar");
 			System.out.println("2- Buscar Colmenar");
 			System.out.println ("3- Mostrar Colmenares");
 			System.out.println ("4- Modificar Colmenar");
 			System.out.println("5- Borrar Colmenar");
 			System.out.println("6- Listado de colmenares en ciudades");
-			System.out.println ("7- Regresar al menú Principal");
+			System.out.println ("7- Regresar al menÃº Principal");
 				where = teclaopciones.nextInt();
 	
 				switch (where) {
@@ -609,7 +609,7 @@ public void menuPrincipal(){
 					System.out.println(verde+"..."+normal);
 				break;
 				case 3:
-					System.out.println(verde+"Ahora lo estamos enviando a el menú con el listado de colmenares"+normal);
+					System.out.println(verde+"Ahora lo estamos enviando a el menÃº con el listado de colmenares"+normal);
 					System.out.println(verde+"..."+normal);
 					listadoDeColmenares();
 				break;
@@ -626,19 +626,19 @@ public void menuPrincipal(){
 				break;
 				
 				case 6:
-					System.out.println(verde+"Ahora lo estamos enviando a el menú con el listado de colmenares en ciudades"+normal);
+					System.out.println(verde+"Ahora lo estamos enviando a el menÃº con el listado de colmenares en ciudades"+normal);
 					System.out.println(verde+"..."+normal);
 					listadoDeColmenaresEnCiudad();
 				break;
 				
 				case 7:
-					System.out.println (purpura+"Regresando al Menú Principal"+normal);
+					System.out.println (purpura+"Regresando al MenÃº Principal"+normal);
 					System.out.println (verde+"..."+normal);
 						menuPrincipal();
 				break;
 				
 				default:
-					System.out.println(rojo+"Esa opción no está codificada");
+					System.out.println(rojo+"Esa opciÃ³n no estÃ¡ codificada");
 					System.out.println(verde+"..."+normal);
 
 				break;
@@ -672,34 +672,34 @@ public void menuPrincipal(){
 							for (int lugarcito=0; lugarcito<cedulaA.length; lugarcito++) {
 								 	
 								do {
-									 System.out.println (celeste+"Ingrese la cédula del apicultor a cargo de la colmena"+normal);
+									 System.out.println (celeste+"Ingrese la cÃ©dula del apicultor a cargo de la colmena"+normal);
 									 	apicultor = teclanombres.next();
 									 	
 									 	if (cedulaA[lugarcito]==null) {
 									 		error = error+1;
 												 		if (error>=cedulaA.length) {
 												 		System.out.println(amarillo+"No hay apicultores registrados"+normal);
-													 		System.out.println(verde+ "1- Salir al menú colmenar");
-															System.out.println("Cualquier otro número- Seguir registrando colmenar"+normal);
+													 		System.out.println(verde+ "1- Salir al menÃº colmenar");
+															System.out.println("Cualquier otro nÃºmero- Seguir registrando colmenar"+normal);
 															where=teclaopciones.nextInt();
 																switch (where) {
 																case 1:
-																	System.out.println(verde+"Regresandolo al menú colmenar");
+																	System.out.println(verde+"Regresandolo al menÃº colmenar");
 																	System.out.println(verde+"..."+normal);
 																	menuColmenar();
 																	break;
 													}
 									 		}
 											}else if (apicultor.length()<8) {
-												 		System.out.println(rojo+"ERROR: La cédula ingresada no es válida."+normal);
+												 		System.out.println(rojo+"ERROR: La cÃ©dula ingresada no es vÃ¡lida."+normal);
 												 	}else if (cedulaA[lugarcito].compareTo(apicultor)!=0){
-												 			System.out.println(rojo+"ERROR 2: El apicultor no está registrado en el sistema. "+normal);
+												 			System.out.println(rojo+"ERROR 2: El apicultor no estÃ¡ registrado en el sistema. "+normal);
 												 		}
 
 								 }while(apicultor.length()<8 || cedulaA[lugarcito].compareTo(apicultor)!=0);
 									 		
 												do {
-													 System.out.println (celeste+"Ingrese la capacidad de producción de litros por mes del colmenar"+normal);
+													 System.out.println (celeste+"Ingrese la capacidad de producciÃ³n de litros por mes del colmenar"+normal);
 														capacidad=teclaopciones.nextInt();
 														if (capacidad<=0) {
 															System.out.println(rojo+"ERROR 1: La capacidad de litros ingresada es menor o igual a cero.");
@@ -711,7 +711,7 @@ public void menuPrincipal(){
 													coordX = teclacoords.nextDouble();
 													
 														if (coordX < -180 || coordX > 180) {
-														 System.out.println(rojo+"ERROR: La coordenada ingresada no es válida."+normal);
+														 System.out.println(rojo+"ERROR: La coordenada ingresada no es vÃ¡lida."+normal);
 														}
 												 }while (coordX < -180 || coordX > 180);
 												 	
@@ -719,13 +719,13 @@ public void menuPrincipal(){
 												 	System.out.println(celeste+"Ingrese la coordenada Y del colmenar ha registrar"+normal);
 												 		coordY = teclacoords.nextDouble();
 												 			if (coordY < -90 || coordY > 90) {
-												 				System.out.println(rojo+"ERROR: La coordenada ingresada no es válida."+normal);
+												 				System.out.println(rojo+"ERROR: La coordenada ingresada no es vÃ¡lida."+normal);
 												 			}
 												 			}while (coordY < -90 || coordY > 90);
 												 
 													for (int indice=0; indice<coXeY2.length; indice=indice+2) {
 											 		 	if (Double.compare (coordX, coXeY2[indice])==0 && Double.compare(coordY, coXeY2[indice+1])==0) {
-											 		 			System.out.println(rojo+"ERROR 3: El punto de coordenadas coordX, coordY ya está registrado en el sistema. "+normal);
+											 		 			System.out.println(rojo+"ERROR 3: El punto de coordenadas coordX, coordY ya estÃ¡ registrado en el sistema. "+normal);
 											 		 		indice=coXeY2.length;
 											 		 		lugarcito= cedulaA.length;
 											 		 		i= colmenares.length;
@@ -739,7 +739,7 @@ public void menuPrincipal(){
 													 			System.out.println(verde+"OK"+normal);
 
 											 			}if (colmenares[4]!=null){
-											 				System.out.println(amarillo+"No hay espacio para más colmenares"+normal);
+											 				System.out.println(amarillo+"No hay espacio para mÃ¡s colmenares"+normal);
 											 				lugarcito= cedulaA.length;
 											 				indice=coXeY.length;
 											 				i=colmenares.length;
@@ -748,12 +748,12 @@ public void menuPrincipal(){
 									 													}
 														}
 							}
-		System.out.println( "1- Salir al menú colmenar");
-		System.out.println("Cualquier otro número- Volver a registrar colmenar");
+		System.out.println( "1- Salir al menÃº colmenar");
+		System.out.println("Cualquier otro nÃºmero- Volver a registrar colmenar");
 		where=teclaopciones.nextInt();
 			switch (where) {
 			case 1:
-				System.out.println(verde+"Regresandolo al menú colmenar");
+				System.out.println(verde+"Regresandolo al menÃº colmenar");
 				System.out.println(verde+"..."+normal);
 				menuColmenar();
 				break;
@@ -778,7 +778,7 @@ public void menuPrincipal(){
 									System.out.println (verde+"----------------------------------------"+normal);
 							}
 									
-								System.out.println (celeste+ "Si quiere volver al menú de colmenares: precione 1"+normal);
+								System.out.println (celeste+ "Si quiere volver al menÃº de colmenares: precione 1"+normal);
 								where= teclaopciones.nextInt();
 							}while (where != 1);
 								menuColmenar();
@@ -822,20 +822,20 @@ public void menuPrincipal(){
 	public void menuCentroDeExtraccion(){
 	
 		do {
-			System.out.println (celeste+"Bienvenido al menú de Centros de Extracción"+normal);
-			System.out.println("¿Qué quiere hacer?");
-			System.out.println("1- Registrar Centro de Extracción");
-			System.out.println("2- Buscar Centro de Extracción");
-			System.out.println ("3- Mostrar Centros de Extracción");
-			System.out.println ("4- Modificar Centro de Extracción");
-			System.out.println("5- Borrar Centro de Extracción");
-			System.out.println ("6- Regresar al menú Principal");
+			System.out.println (celeste+"Bienvenido al menÃº de Centros de ExtracciÃ³n"+normal);
+			System.out.println("Â¿QuÃ© quiere hacer?");
+			System.out.println("1- Registrar Centro de ExtracciÃ³n");
+			System.out.println("2- Buscar Centro de ExtracciÃ³n");
+			System.out.println ("3- Mostrar Centros de ExtracciÃ³n");
+			System.out.println ("4- Modificar Centro de ExtracciÃ³n");
+			System.out.println("5- Borrar Centro de ExtracciÃ³n");
+			System.out.println ("6- Regresar al menÃº Principal");
 				where = teclaopciones.nextInt();
 		
 					switch (where) {
 					
 					case 1:
-						System.out.println(verde+"Enviandolo al menú para registrar Centros de Extracción"+normal);
+						System.out.println(verde+"Enviandolo al menÃº para registrar Centros de ExtracciÃ³n"+normal);
 						System.out.println(verde+"..."+normal);
 						
 						registrarCentroDeExtraccion();
@@ -869,13 +869,13 @@ public void menuPrincipal(){
 					break;
 					
 					case 6:
-						System.out.println (purpura+"Regresando al Menú Principal"+normal);
+						System.out.println (purpura+"Regresando al MenÃº Principal"+normal);
 						System.out.println (verde+"..."+normal);
 							menuPrincipal();
 					break;
 					
 					default:
-						System.out.println(rojo+"Esa opción no está codificada"+normal);
+						System.out.println(rojo+"Esa opciÃ³n no estÃ¡ codificada"+normal);
 					break;
 					}
 		}while (where !=6);
@@ -891,7 +891,7 @@ public void menuPrincipal(){
 
 			do {
 			System.out.println (verde+"----------------------------------------"+normal);
-			System.out.println (verde+"-Registrar Centro de Extracción-"+normal);
+			System.out.println (verde+"-Registrar Centro de ExtracciÃ³n-"+normal);
 			System.out.println (verde+"----------------------------------------"+normal);
 			
 			for (int i=0; i<centros.length; i++) {
@@ -900,7 +900,7 @@ public void menuPrincipal(){
 					
 				
 					do {
-					System.out.println (celeste+"Ingrese la capacidad de recolección de litros original del centro"+normal);
+					System.out.println (celeste+"Ingrese la capacidad de recolecciÃ³n de litros original del centro"+normal);
 					capacidad=teclaopciones.nextInt();
 					
 				if (capacidad<=0) {
@@ -909,7 +909,7 @@ public void menuPrincipal(){
 				}while(capacidad<=0);
 
 				do {
-					System.out.println (celeste+"Ingrese la capacidad de recolección de litros remanente del centro"+normal);
+					System.out.println (celeste+"Ingrese la capacidad de recolecciÃ³n de litros remanente del centro"+normal);
 					capacidad_r=teclaopciones.nextInt();
 					
 				if (capacidad_r<=0) {
@@ -917,35 +917,35 @@ public void menuPrincipal(){
 				}
 				}while(capacidad<=0);
 				do {
-					System.out.println(celeste+"Ingrese la coordenada X del centro de extracción ha registrar"+normal);
+					System.out.println(celeste+"Ingrese la coordenada X del centro de extracciÃ³n ha registrar"+normal);
 					coordX = teclacoords.nextDouble();
 					if (coordX < -180 || coordX > 180) {
-							System.out.println(rojo+"ERROR: La coordenada ingresada no es válida."+normal);
+							System.out.println(rojo+"ERROR: La coordenada ingresada no es vÃ¡lida."+normal);
 					}
 				}while (coordX < -180 || coordX > 180);
 				
 				do {
-					System.out.println(celeste+"Ingrese la coordenada Y del centro de extracción ha registrar"+normal);
+					System.out.println(celeste+"Ingrese la coordenada Y del centro de extracciÃ³n ha registrar"+normal);
 					coordY = teclacoords.nextDouble();
 					if (coordY < -90 || coordY > 90) {
-						System.out.println(rojo+"ERROR: La coordenada ingresada no es válida."+normal);
+						System.out.println(rojo+"ERROR: La coordenada ingresada no es vÃ¡lida."+normal);
 					}
 				}while (coordY < -90 || coordY > 90);
 				
 				for (int indice=0; indice<coXeY3.length;indice=indice+2) {
 				if (Double.compare (coordX,coXeY3[indice])==0 && Double.compare(coordY,coXeY3[indice+1])==0) {
-					System.out.println(rojo+"ERROR 3: El punto de coordenadas coordX, coordY ya está registrado en el sistema. "+normal);
+					System.out.println(rojo+"ERROR 3: El punto de coordenadas coordX, coordY ya estÃ¡ registrado en el sistema. "+normal);
 					indice=coXeY3.length;
 					i= colmenares.length;
 				}else if (centros[4]!=null) {
-					System.out.println(amarillo+"No hay espacio para más Centros de Extracción"+normal);
+					System.out.println(amarillo+"No hay espacio para mÃ¡s Centros de ExtracciÃ³n"+normal);
 					indice=coXeY3.length;
 					i=centros.length;
 
 				}else {
 					coXeY3[indice]= coordX;
 					coXeY3[indice+1]= coordY;
-					centros[i]= ("Centro de extracción "+ i +"+ Coordenada X:"+coXeY3[indice]+ " Coordenada Y: "+coXeY3[indice+1]+" Capacidad de recolección original: "+capacidad)+ " Capacidad de recolección remanente: "+capacidad_r;
+					centros[i]= ("Centro de extracciÃ³n "+ i +"+ Coordenada X:"+coXeY3[indice]+ " Coordenada Y: "+coXeY3[indice+1]+" Capacidad de recolecciÃ³n original: "+capacidad)+ " Capacidad de recolecciÃ³n remanente: "+capacidad_r;
 					indice=coXeY3.length;
 					i=colmenares.length;
 					System.out.println(verde+"OK"+normal);
@@ -954,12 +954,12 @@ public void menuPrincipal(){
 				}
 			}
 			
-				System.out.println( "1- Salir al menú centros de extracción");
-				System.out.println("Cualquier otro número- Volver a registrar Centro de Extracción");
+				System.out.println( "1- Salir al menÃº centros de extracciÃ³n");
+				System.out.println("Cualquier otro nÃºmero- Volver a registrar Centro de ExtracciÃ³n");
 					where=teclaopciones.nextInt();
 						switch (where) {
 						case 1:
-							System.out.println(verde+"Regresandolo al menú de Centros de Extracción");
+							System.out.println(verde+"Regresandolo al menÃº de Centros de ExtracciÃ³n");
 							System.out.println(verde+"..."+normal);
 							menuCentroDeExtraccion();
 						break;
@@ -971,20 +971,20 @@ public void menuPrincipal(){
 
 	public void menuTramo(){
 			do {
-				System.out.println (celeste+"Bienvenido al menú de Tramos"+normal);
-				System.out.println("¿Qué quiere hacer?");
+				System.out.println (celeste+"Bienvenido al menÃº de Tramos"+normal);
+				System.out.println("Â¿QuÃ© quiere hacer?");
 				System.out.println("1- Registrar Tramo");
 				System.out.println("2- Buscar Tramo");
 				System.out.println ("3- Mostrar Tramos");
 				System.out.println ("4- Modificar Tramo");
 				System.out.println("5- Borrar Tramo");
-				System.out.println ("6- Regresar al menú Principal");
+				System.out.println ("6- Regresar al menÃº Principal");
 					where = teclaopciones.nextInt();
 	 
 						switch (where) {
 						
 						case 1:	
-							System.out.println(verde+"Enviandolo al menú para registrar Tramos"+normal);
+							System.out.println(verde+"Enviandolo al menÃº para registrar Tramos"+normal);
 							System.out.println(verde+"..."+normal);
 							
 							registrarTramo();						
@@ -1010,13 +1010,13 @@ public void menuPrincipal(){
 						break;
 	
 						case 6:
-							System.out.println (purpura+"Regresando al Menú Principal"+normal);
+							System.out.println (purpura+"Regresando al MenÃº Principal"+normal);
 							System.out.println (verde+"..."+normal);
 								menuPrincipal();
 						break;
 	
 						default:
-							System.out.println(rojo+"Esa opción no está codificada"+normal);
+							System.out.println(rojo+"Esa opciÃ³n no estÃ¡ codificada"+normal);
 							System.out.println(verde+"..."+normal);
 	
 						break;
@@ -1062,7 +1062,7 @@ public void menuPrincipal(){
 							coordXInicial = teclacoords.nextDouble();
 							
 							if (coordXInicial < -180 || coordXInicial > 180) {
-									System.out.println(rojo+"ERROR: La coordenada ingresada no es válida."+normal);
+									System.out.println(rojo+"ERROR: La coordenada ingresada no es vÃ¡lida."+normal);
 							}
 								coordString = String.valueOf(coordXInicial);
                                                         if (coordString.isEmpty()){
@@ -1075,7 +1075,7 @@ public void menuPrincipal(){
 							System.out.println(celeste+"Ingrese la coordenada Y inicial tramo ha registrar"+normal);
 							coordYInicial = teclacoords.nextDouble();
 							if (coordYInicial < -90 || coordYInicial > 90) {
-								System.out.println(rojo+"ERROR: La coordenada ingresada no es válida."+normal);
+								System.out.println(rojo+"ERROR: La coordenada ingresada no es vÃ¡lida."+normal);
 							}
                                                         coordString = String.valueOf(coordXInicial);
                                                         if (coordString.isEmpty()){
@@ -1087,7 +1087,7 @@ public void menuPrincipal(){
 							System.out.println(celeste+"Ingrese la coordenada X final del tramo ha registrar"+normal);
 							coordXFinal= teclacoords.nextDouble();
 							if (coordXFinal < -180 || coordXFinal > 180) {
-									System.out.println(rojo+"ERROR: La coordenada ingresada no es válida."+normal);
+									System.out.println(rojo+"ERROR: La coordenada ingresada no es vÃ¡lida."+normal);
 							}
                                                         coordString = String.valueOf(coordXInicial);
                                                         if (coordString.isEmpty()){
@@ -1099,7 +1099,7 @@ public void menuPrincipal(){
 							System.out.println(celeste+"Ingrese la coordenada Y final tramo ha registrar"+normal);
 							coordYFinal= teclacoords.nextDouble();
 							if (coordYFinal < -90 || coordYFinal > 90) {
-								System.out.println(rojo+"ERROR: La coordenada ingresada no es válida."+normal);
+								System.out.println(rojo+"ERROR: La coordenada ingresada no es vÃ¡lida."+normal);
 							}
                                                         coordString = String.valueOf(coordXInicial);
                                                         if (coordString.isEmpty()){
@@ -1123,7 +1123,7 @@ public void menuPrincipal(){
 							i= tramos.length;
 						
 						}else if (tramos[4]!=null){
-							System.out.println(amarillo+"No hay espacio para más tramos"+normal);
+							System.out.println(amarillo+"No hay espacio para mÃ¡s tramos"+normal);
 							indice=coXeYFeI.length;
 							i=tramos.length;
 
@@ -1149,12 +1149,12 @@ public void menuPrincipal(){
 						
 					
 					
-						System.out.println( "1- Salir al menú de tramos");
-						System.out.println("Cualquier otro número- Volver a registrar tramo");
+						System.out.println( "1- Salir al menÃº de tramos");
+						System.out.println("Cualquier otro nÃºmero- Volver a registrar tramo");
 							where=teclaopciones.nextInt();
 								switch (where) {
 								case 1:
-									System.out.println(verde+"Regresandolo al menú de Tramos");
+									System.out.println(verde+"Regresandolo al menÃº de Tramos");
 									System.out.println(verde+"..."+normal);
 									menuTramo();
 								break;
@@ -1166,14 +1166,14 @@ public void menuPrincipal(){
 	public void menuEstadisticas(){
 	
 			do {
-				System.out.println (celeste+"Bienvenido al menú de Estadísticas"+normal);
-				System.out.println("¿Qué quiere hacer?");
-				System.out.println("1- Registrar Estadística");
-				System.out.println("2- Buscar Estadística");
-				System.out.println ("3- Mostrar Estadísticas");
-				System.out.println ("4- Modificar Estadística");
-				System.out.println("5- Borrar Estadística");
-				System.out.println ("6- Regresar al menú Principal");
+				System.out.println (celeste+"Bienvenido al menÃº de EstadÃ­sticas"+normal);
+				System.out.println("Â¿QuÃ© quiere hacer?");
+				System.out.println("1- Registrar EstadÃ­stica");
+				System.out.println("2- Buscar EstadÃ­stica");
+				System.out.println ("3- Mostrar EstadÃ­sticas");
+				System.out.println ("4- Modificar EstadÃ­stica");
+				System.out.println("5- Borrar EstadÃ­stica");
+				System.out.println ("6- Regresar al menÃº Principal");
 					where = teclaopciones.nextInt();
 	
 						switch (where) {
@@ -1210,14 +1210,14 @@ public void menuPrincipal(){
 							break;
 							
 							case 6:
-								System.out.println (purpura+"Regresando al Menú Principal");
+								System.out.println (purpura+"Regresando al MenÃº Principal");
 								System.out.println (verde+"..."+normal);
 								menuPrincipal();
 								
 							break;
 								
 							default:
-								System.out.println(rojo+"Esa opción no está codificada"+normal);
+								System.out.println(rojo+"Esa opciÃ³n no estÃ¡ codificada"+normal);
 								System.out.println(verde+"..."+normal);
 	
 							break;
@@ -1225,7 +1225,7 @@ public void menuPrincipal(){
 			}while (where != 6);
                         }
 	public static void main(String[] args) {
-		Projectinhoindividual enviar = new Projectinhoindividual();
+		LittleBee enviar = new LittleBee();
 		enviar.precargarCiudad();
 		enviar.menuPrincipal();
 	}
